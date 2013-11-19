@@ -1,0 +1,67 @@
+GIT
+  remote: git://github.com/treeder/rack-flash.git
+  revision: 20e393cdce030f35422dba545a1fed91ed398b29
+  specs:
+    rack-flash3 (1.0.5)
+      rack
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activemodel (4.0.1)
+      activesupport (= 4.0.1)
+      builder (~> 3.1.0)
+    activerecord (4.0.1)
+      activemodel (= 4.0.1)
+      activerecord-deprecated_finders (~> 1.0.2)
+      activesupport (= 4.0.1)
+      arel (~> 4.0.0)
+    activerecord-deprecated_finders (1.0.3)
+    activesupport (4.0.1)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    arel (4.0.1)
+    atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
+    builder (3.1.4)
+    chronic (0.10.2)
+    haml (4.0.4)
+      tilt
+    i18n (0.6.5)
+    minitest (4.7.5)
+    multi_json (1.8.2)
+    pg (0.17.0)
+    rack (1.5.2)
+    rack-protection (1.5.1)
+      rack
+    rake (10.1.0)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-activerecord (1.2.3)
+      activerecord (>= 3.0)
+      sinatra (~> 1.0)
+    sqlite3 (1.3.8)
+    thread_safe (0.1.3)
+      atomic
+    tilt (1.4.1)
+    tzinfo (0.3.38)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  bcrypt-ruby
+  chronic
+  haml
+  pg
+  rack-flash3!
+  rake
+  sinatra
+  sinatra-activerecord
+  sqlite3
