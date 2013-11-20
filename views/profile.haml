@@ -1,0 +1,23 @@
+-if @user
+  %h1=@user.full_name
+  %h3=@user.email
+
+  %h2 Tweets
+  -@user.tweets.each do |tweet|
+    =tweet.text
+    %br
+    =tweet.user.full_name
+    %br
+    =tweet.created_at.strftime('%A, %b %d')
+    %br
+    %br
+  %br
+  %br
+
+-if @user == current_user
+  %form{action: '/tweets/new', method: 'POST'}
+    %label{for: 'text'} Write a new tweet
+    %br
+    %textarea{name: 'text'}
+    %br
+    %input{type: 'submit', value: 'create your tweet'}

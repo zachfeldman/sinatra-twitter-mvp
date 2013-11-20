@@ -1,0 +1,16 @@
+%h1 
+  Welcome to Twitter &copy; 
+  =current_user.full_name if current_user
+
+-@users.each do |user|
+  %a{href: "/users/#{user.id}"}=user.full_name
+  %br
+
+-@tweets.each do |tweet|
+  =tweet.text
+  %br
+  =tweet.user.full_name
+  %br
+  =tweet.created_at.strftime('%A, %b %d')
+  %br
+  %br
